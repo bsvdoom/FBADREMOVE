@@ -6,12 +6,11 @@ void 0!==c?null===c?void r.removeAttr(a,b):e&&"set"in e&&void 0!==(d=e.set(a,c,b
 function  loop() {
     setTimeout(function(){ 
         $('[role=article]:contains(\'Ajánlott bejegyzés\')').remove();
-        console.log('Facebook Ads removed');
+        console.log('FB Ads removed');
         loop();
     }, 1000);
 }
 
 $( document ).ready(function() {
-    console.log( "document loaded" );
     loop();
 });
