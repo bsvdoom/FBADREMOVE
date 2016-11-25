@@ -1,5 +1,5 @@
 # FBADREMOVE
-REmove fb ads w injected script<br>
+Removes fb ads with injected script.<br>
 <br>
 Usage:<br>
 1. Install <a href = "https://chrome.google.com/webstore/detail/custom-javascript-for-web/poakhlngfciodnhlhhgnaaelnpjljija">Custom JavaScript for websites</a> chrome plugin or alternative.<br>
