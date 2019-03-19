@@ -5,9 +5,17 @@ void 0!==c?null===c?void r.removeAttr(a,b):e&&"set"in e&&void 0!==(d=e.set(a,c,b
 
 function loop() {
     setTimeout(function(){ 
-        $('[role=article]:contains(\'Ajánlott bejegyzés\')').remove();
-        $('[role=article]:contains(\'Hirdetés\')').remove();
-        console.log('FB Ads removed');
+        //$('[role=article]:contains(\'Ajánlott bejegyzés\')').remove();
+        //$('[role=article]:contains(\'Hirdetés\')').remove();
+        //*updated for 2019 bitch*
+        $('[role=article] span[class*="wxu7yn"]>span[class*="wxu7yn"]>span[class*="wxu7yn"]').each(function(e) {
+            var l = $(this).text();
+            if(l == "é") {
+                console.log('FB Ad removed');
+                $(this).parents('[role=article]').remove();
+            }
+        });
+                
         loop();
     }, 1000);
 }
@@ -15,3 +23,7 @@ function loop() {
 $( document ).ready(function() {
     loop();
 });
+
+
+
+
